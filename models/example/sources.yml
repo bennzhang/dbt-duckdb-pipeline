@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: s3
+    meta:
+      external_location: "s3://my-bucket/my-sources/{name}.parquet"
+    tables:
+      - name: source1
+      - name: source2
+  - name: local
+    meta:
+      external_location: "{name}.csv"
+    tables:
+      - name: data   
