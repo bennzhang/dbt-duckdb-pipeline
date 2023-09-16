@@ -6,7 +6,6 @@
    ) 
 }}
 
-select video_id, count(distinct visitor_id) as visitors
+select CAST(time_stamp AS DATE) as day, video_id, count(1) as views
 from  {{ source('local', 'data') }}
-group by 1
-
+group by 1,2
