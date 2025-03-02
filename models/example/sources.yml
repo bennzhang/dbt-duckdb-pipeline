@@ -11,4 +11,5 @@ sources:
     meta:
       external_location: "{name}.csv"
     tables:
-      - name: data   
+      - name: data
+      - name: posts
